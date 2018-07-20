@@ -56,7 +56,7 @@ class BucketlistsController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_bucketlist
-      @bucketlist = Bucketlist.find(params[:id])
+      @bucketlist = current_user.bucketlists.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
