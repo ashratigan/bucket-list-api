@@ -1,9 +1,11 @@
-class BucketlistsController < ApplicationController
+class BucketlistsController < ProtectedController
+  # before_action :authenticate!
   before_action :set_bucketlist, only: [:show, :update, :destroy]
 
   # GET /bucketlists
   def index
-    @bucketlists = Bucketlist.all
+    # @bucketlists = Bucketlist.all
+    @bucketlists = current_user.bucketlists
 
     render json: @bucketlists
   end
@@ -14,8 +16,12 @@ class BucketlistsController < ApplicationController
   end
 
   # POST /bucketlists
-  def create
-    @bucketlist = Bucketlist.new(bucketlist_params)
+   def create
+    @bucketlist = current_user.bucketlists.build(bucketlist_params)
+    # @bucketlist = Bucketlist.new(bucketlist_params)
+    # @bucketlist.user_id = 1
+    # @bucketlist.user_id = current_user
+    p current_user
 
     if @bucketlist.save
       render json: @bucketlist, status: :created, location: @bucketlist
@@ -23,6 +29,15 @@ class BucketlistsController < ApplicationController
       render json: @bucketlist.errors, status: :unprocessable_entity
     end
   end
+  # def create
+  #   @bucketlist = Bucketlist.new(bucketlist_params)
+
+  #   if @bucketlist.save
+  #     render json: @bucketlist, status: :created, location: @bucketlist
+  #   else
+  #     render json: @bucketlist.errors, status: :unprocessable_entity
+  #   end
+  # end
 
   # PATCH/PUT /bucketlists/1
   def update
