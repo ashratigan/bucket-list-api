@@ -1,4 +1,5 @@
 #!/bin/bash
+# EMAIL=ava@bob.com PASSWORD=hannah scripts/auth/sign-up.sh
 
 curl "http://localhost:4741/sign-up" \
   --include \
