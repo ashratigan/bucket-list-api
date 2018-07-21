@@ -7,7 +7,7 @@ Work on back end began by creating a database, then by creating tables. I create
 
 Check out my deployed site: https://ashratigan.github.io/bucket-list-client/
 
-The back end is hosted on Heroku: https://thawing-anchorage-52719.herokuapp.com//sign-up
+The back end is hosted on Heroku: https://thawing-anchorage-52719.herokuapp.com/
 
 ## Technologies used
 - Ruby
