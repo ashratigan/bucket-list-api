@@ -1,9 +1,9 @@
 # Bucket List 
 
 ## Overview
-This is the api for Bucket List, my first full-stack project. This is a single page application that allows people to create bucket lists. I  also created the [Bucket List Front End](https://github.com/ashratigan/bucket-list-client "Bucket List Front End"). 
+This is the the backend for Bucket List, my first full-stack project. This is a single page application that allows people to create bucket lists. I  also created the [Bucket List Front End](https://github.com/ashratigan/bucket-list-client "Bucket List Front End"). 
 
-Work on this backend began by creating a database, then by creating tables. I created a bucketlist table that has the name of the bucket list and the tasks that someone wants to complete. I then linked the bucket list table to the users table, so when signed in, individual users can create, read, update, and delete their bucket lists. 
+Work on back end began by creating a database, then by creating tables. I created a bucketlist table that has the name of the bucket list and the tasks that someone wants to complete. I then linked the bucket list table to the users table, so when signed in, individual users can create, read, update, and delete their bucket lists. 
 
 Check out my deployed site: https://ashratigan.github.io/bucket-list-client/
 
