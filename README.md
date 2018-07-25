@@ -13,12 +13,6 @@ The back end is hosted on Heroku: https://thawing-anchorage-52719.herokuapp.com/
 - Ruby
 - Ruby on Rails 
 
-## Features and Additions
-I will add some cool features. 
-
-## Updates
-Updates will come after project is complete.
-
 ## ERD
 ![Bucket List ERD](https://i.imgur.com/940D24H.jpg)
 
